@@ -1,40 +1,35 @@
-class Car:
-	def __init__(self, brand, price, model, color):
-		self.brand = brand
-		self.price = price
-		self.model = model
-		self.color = color
-
-	def display_details(self):
-		print(self.brand)
-		print(self.price)
-		print(self.model)
-		print(self.color)
-class Car1(Car):
-	def display_details(self):
-		print(self.brand)
-		print(self.price)
-		print(self.model)
-		print(self.color)
-class Car2(Car):
-	def display_details(self):
-		print(self.brand)
-		print(self.price)
-		print(self.model)
-		print(self.color)
+## Problem Statement 
+Write a Python program to model a car dealership sales system using object-oriented programming. Create a base class Car and two derived classes Car1 and Car2 to represent different car types.
+---
 
 
-# Read input
-car1_data = input().split()
-brand1, price1, model1, color1 = car1_data[0], float(car1_data[1]), car1_data[2], car1_data[3]
+## Algorithm
 
-car2_data = input().split()
-brand2, price2, model2, color2 = car2_data[0], float(car2_data[1]), car2_data[2], car2_data[3]
+Start
 
-# Create objects
-car1 = Car1(brand1, price1, model1, color1)
-car2 = Car2(brand2, price2, model2, color2)
+Read input for Car1 → brand, price, model, color
 
-# Display details
-car1.display_details()
-car2.display_details()
+Read input for Car2 → brand, price, model, color
+
+Create object car1 using class Car1
+
+Create object car2 using class Car2
+
+Call display_details() for car1
+
+Call display_details() for car2
+
+Stop
+---
+
+## Flowchart
+![Flowchart](
+Car.drawio.png)
+
+---
+
+
+## Execution
+<p align="center">
+  <img src="Car.png" width="900">
+</p>
